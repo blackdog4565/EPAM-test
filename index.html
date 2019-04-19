@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>EPAM TEST</title>
+</head>
+
+<body class="body">
+  <div id="app">
+    <div class="inner">
+      <div class="big-div">
+        <div class="header">
+          <h1 class="h1">EPAM TEST</h1>
+        </div>
+        <div class="control-panel flex-row">
+          <div class="filter">
+            <input type="text" class="input filter__input">
+            <button class="button filter__button">Search</button>
+          </div>
+          <div class="add">
+            <button class="button add__button">Add New</button>
+          </div>
+        </div>
+
+        <div class="products">
+          <ul class="products__attrs flex-row">
+            <li class="products__attr products__attr_name">Name</li>
+            <li class="products__attr products__attr_price">Price</li>
+            <li class="products__attr products__attr_actions">Actions</li>
+          </ul>
+        </div>  
+
+        <form class="add-update flex-row" action="#" method="">
+          <div class="add-update__name ">
+            <p class="add-update__name-text add-update-p">Name: (Required field)</p>
+            <input type="text" class="input add-update__name-input" maxlength="15">
+          </div>
+
+          <div class="add-update__count">
+            <p class="add-update__count-text add-update-p">Count:</p>
+            <input type="text" class="input add-update__count-input">
+          </div>
+          
+          <div class="add-update__price">
+            <p class="add-update__price-text add-update-p">Price:</p>
+            <input type="text" class="input add-update__price-input">
+          </div>
+
+          <div class="add-update__id">
+            <input type="text" class="input add-update__id-input" value="">
+          </div>
+          
+          <div class="add-update__button">
+            <button class="button add-update__button-but">Add / Update</button>
+          </div>
+        </form>
+
+        <div class="confirm-delete flex-column">
+          <div class="div-sure flex-row">
+            <p class="p-sure">Are you sure?</p>      
+          </div>
+          <div class="buttons-sure flex-row">
+            <button class="button yes">Yes</button>
+            <button class="button no">No</button>
+          </div>
+        </div> 
+        
+      </div>   
+      </div>
+      <div class="overlay"></div>
+      <div class="remove-space flex-column">
+        <div class="remove-space__div flex-row">
+          <p class="remove-space__p">There are only spaces in this field.</p>        
+        </div>
+        <div class="remove-space__div remove-space__div_p flex-row">
+          <button class="button remove-space__but-ok">OK</button>          
+        </div>
+      </div>
+      <div class="enter-the-name flex-column">
+        <div class="remove-space__div flex-row">
+          <p class="remove-space__p">Please, enter the name of product.</p>        
+        </div>
+        <div class="remove-space__div remove-space__div_p flex-row">
+          <button class="button remove-space__but-ok">OK</button>          
+        </div>
+      </div>
+      
+    
+  </div>
+   
+  <script src="js/script.js"></script>
+
+</body>
+</html>
